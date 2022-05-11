@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import { nominalTypeHack } from 'prop-types';
 
 const Menu = () => (
     <div style= {{

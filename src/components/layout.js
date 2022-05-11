@@ -11,6 +11,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
 import Menu from "../components/menu"
+import Footer from "../components/footer"
 import "./layout.css"
 
 const Layout = ({ children }) => {
@@ -46,6 +47,7 @@ const Layout = ({ children }) => {
           {` `}
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
+        <Footer />
       </div>
     </>
   )
