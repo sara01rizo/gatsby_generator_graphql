@@ -3,7 +3,7 @@ import Link from 'gatsby-plugin-catch-links'
 import { graphql } from 'gatsby'
 
 export default function Template({data}) {
-    const post = data.markdownRemark
+    const post = data.allMarkdownRemark
 
     return(
         <div>
@@ -18,13 +18,12 @@ export default function Template({data}) {
 
 export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
-        markdownRemark(frontmatter: { path: { eq: $path } }){
+        allMarkdownRemark(frontmatter: { path: { eq: $path } }){
             html
             frontmatter {
                 path
                 title
                 author
-                date
             }
         }
     }
