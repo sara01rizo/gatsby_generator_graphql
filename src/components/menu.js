@@ -1,9 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
-import { nominalTypeHack } from 'prop-types';
 
 const Menu = () => (
-    <div style= {{
+        <div style= {{
         background: '#f4f4f4',
         paddingTop: '10px',
     }}>
@@ -17,8 +16,8 @@ const Menu = () => (
             <li><Link to="/about">About</Link></li>
             <li><Link to="/services">Services</Link></li>
         </ul>
-
     </div>
+    
   )
 
 export default Menu;

@@ -9,7 +9,8 @@ const Footer = () => (
         <ul style= {{
             listStyle: 'none',
             display: 'flex',
-            justifyContent: 'space-evenly'
+            justifyContent: 'space-evenly',
+            margin: 10, 
         }}>
             <li><Link to="/SocialMedia">Social Media</Link></li>
             <li><Link to="/AboutUs">About Us</Link></li>
